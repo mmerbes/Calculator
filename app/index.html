@@ -12,6 +12,8 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
     <!-- endbuild -->
     
   </head>
@@ -21,22 +23,34 @@
     <![endif]-->
     
     <div class="container">
-      <div class="calculator">
+      <div id="calculator">
         <div class="screen-area">
-          <div class="screen-bezel">
-            <div class="screen">
-              
-            </div>
+          <div class="screen">
+            <p id='answer' class='noselect'>0</p>
+            <div id='history' class='noselect'><p></p></div>
           </div>
         </div>
-        <div class="buttons">
-          <div class="button-row">
-            <div class="button btn-7"></div>
-            <div class="button btn-8"></div>
-            <div class="button btn-9"></div>
-            <div class="button btn-divide"></div>
-            <div class="button btn-sqrt"></div>
-          </div>
+        <div id="buttons">
+          <button class="button" id="btn-7" value="7">7</button>
+          <button class="button" id="btn-8" value="8">8</button>
+          <button class="button" id="btn-9" value="9">9</button>
+          <button class="button" id="btn-CE" value="CE">CE</button>
+          <button class="button" id="btn-C" value="C">C</button>
+          <button class="button" id="btn-4" value="4">4</button>
+          <button class="button" id="btn-5" value="5">5</button>
+          <button class="button" id="btn-6" value="6">6</button>
+          <button class="button" id="btn-divide" value="‌÷">&divide;</button>
+          <button class="button" id="btn-multi" value="‌×">‌×</button>‌
+          <button class="button" id="btn-1" value="1">1</button>
+          <button class="button" id="btn-2" value="2">2</button>
+          <button class="button" id="btn-3" value="3">3</button>
+          <button class="button" id="btn-minus" value="-">-</button>
+          <button class="button"  id="hidden-N">N</button hidden>
+          <button class="button" id="btn-negate" value="neg">¬</button>
+          <button class="button" id="btn-0" value="0">0</button>
+          <button class="button" id="btn-point" value=".">.</button>
+          <button class="button" id="btn-plus" value="+">+</button>
+          <button class="button" id="btn-eql" value="=">=</button>
         </div>
       </div>
     </div>
